@@ -902,7 +902,7 @@ impl Session {
     /// Returns the number of query threads that should be used for this
     /// compilation
     pub fn threads_from_count(query_threads: Option<usize>) -> usize {
-        query_threads.unwrap_or(::num_cpus::get())
+        query_threads.unwrap_or(1)
     }
 
     /// Returns the number of query threads that should be used for this
